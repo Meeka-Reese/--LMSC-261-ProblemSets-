@@ -5,6 +5,7 @@ def setup():
 
 
 def drawObject(x, y, s):
+    #Function to draw object
     pushMatrix()
     translate(x, y)
     scale(s)
@@ -18,5 +19,6 @@ def drawObject(x, y, s):
     ellipse(0, 0, 25, 25)
     popMatrix()
 def draw():
+    #Calling function twice with different location
     drawObject(250, 20, .5)
     drawObject(50, 20, 2)

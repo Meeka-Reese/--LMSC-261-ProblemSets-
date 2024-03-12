@@ -7,6 +7,7 @@ def setup():
     frameRate(30)
 
 def drawObject(x, y, s, r):
+    #function to draw object
     pushMatrix()
     translate(x, y)
     scale(s)
@@ -23,6 +24,7 @@ def drawObject(x, y, s, r):
 def draw():
     global r
     global move  
+    #setting variables for movement
     background(20)
     cellsize = 30
     subcell = 20
@@ -37,10 +39,13 @@ def draw():
             for subrow in range(10):
                 x = (row + space + move + 0.5) * subcell
                 subcell += 5
+                #increase spacing
                 stroke(r)
                 strokeWeight(5)
                 drawObject(x, y, 1, r)
+                #Nesting loops and increasing variable for mov.
     move += .03
+    #reset variables to make animation loop
     if 10 < move <= 100:
 
         move = -1

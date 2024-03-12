@@ -5,6 +5,7 @@ def setup():
 
 
 def drawObject(x, y, s):
+    #function to draw object
     pushMatrix()
     translate(x, y)
     scale(s)
@@ -19,6 +20,7 @@ def drawObject(x, y, s):
     popMatrix()
 def draw():
     cellsize = 50
+    #nested loops for gridding
     for row in range(10):
         for col in range(10):
             x = (row + .5) * cellsize 

@@ -3,6 +3,7 @@ def setup():
     background (20)
     noStroke()
 def draw():
+    #drawing all objects
     fill (25, 100, 90)
     rect(250, 200, 10, 100)
     arc(240, 210, 30, 40, .5, 5, CHORD)
