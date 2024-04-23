@@ -1,0 +1,49 @@
+.center {
+    text-align: center;    
+}
+.left {
+    text-align: left;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: lightblue;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(217, 219, 194);
+    min-width: 60px;
+    /*link block formating*/
+}
+
+.dropdown-content a {
+    color: black;
+    /*link color*/
+    display: block;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    /*color when hovering over links*/
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #bf6a28;
+}
+
