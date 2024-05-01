@@ -1,6 +1,12 @@
 function changeBackgroundColor(color) {
     document.body.style.backgroundColor = color;
 }
+let x = 0;
+function progress(num)
+{
+  x += num;
+  
+}
 function ranImages() {
     // Array of image URLs
     var images = [
