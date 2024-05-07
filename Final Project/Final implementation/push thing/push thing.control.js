@@ -4,6 +4,7 @@ host.setShouldFailOnDeprecatedUse(true);
 host.defineController("ableton", "push thing", "0.1", "897b21e6-08e6-4db3-80a0-ffddeb919b4f", "Floating To The Surface");
 host.defineMidiPorts(1, 1);
 host.addDeviceNameBasedDiscoveryPair(["Input Port 0"], ["Output Port 0"]);
+//Bitwig api setup with version, name, and number of i/o ports
 
 
 let Playing = false;
@@ -31,6 +32,7 @@ function init()
 function onMidi0(status, data1, data2) 
 {
    printMidi(status, data1, data2);
+   //Print Midi Coming In
    
  
 
@@ -56,6 +58,7 @@ function onMidi0(status, data1, data2)
             host.showPopupNotification("Play");
             }
             break;
+            //Case Statements for transport controls and to notify Bitwig of change
          
          
 
@@ -79,11 +82,7 @@ function onMidi0(status, data1, data2)
 }
 
 
-function sayHello()
-{
-   host.showPopupNotification("Hello World");
 
-}
 function flush() 
 {
    let isPlaying = transport.isPlaying ().get();
